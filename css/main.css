@@ -1,19 +1,17 @@
 .box {
 	width: 100px;
-	height: 100px;
+	height:100px;
 	background-color: orange;
-	transition: 1s;
 }
 
-.box:focus {
-	width: 300px;
+.box::before {
+	content: "반가워요!";
+}
+
+.box::after {
+	content: "열심히 공부해서 즐겁게 살아봐요 ㅎㅎ";
+	display: block;
+	width: 30px;
+	height: 30px;
 	background-color: royalblue;
-}
-
-input {
-	
-}
-
-input:focus {
-	background-color: orange;
 }
