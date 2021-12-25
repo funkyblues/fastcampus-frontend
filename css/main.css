@@ -1,17 +1,7 @@
-.box {
-	width: 100px;
-	height:100px;
+[type="text"/*"password"*/] {
 	background-color: orange;
 }
 
-.box::before {
-	content: "반가워요!";
-}
-
-.box::after {
-	content: "열심히 공부해서 즐겁게 살아봐요 ㅎㅎ";
-	display: block;
-	width: 30px;
-	height: 30px;
-	background-color: royalblue;
+[data-fruit-name] {
+	color: red;
 }
