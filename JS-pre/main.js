@@ -1,6 +1,6 @@
-let boxEl = document.querySelector('.box');
+// let boxEl = document.querySelector('.box');
 
-console.log(boxEl);
+// console.log(boxEl);
 
 // // HTML 요소(Element) 1개 검색/찾기
 // const boxEl = document.querySelector('.box');
@@ -19,6 +19,26 @@ console.log(boxEl);
 //   console.log("Click~");
 // })
 
-boxEl.addEventListener("click", function () {
-  console.log("Click~~");
-});
+// boxEl.addEventListener("click", function () {
+//   console.log("Click~~");
+//   boxEl.classList.add("active");
+//   console.log(boxEl.classList.contains('active'));
+//   boxEl.classList.remove("active");
+//   console.log(boxEl.classList.contains('active'));
+// });
+
+
+// const boxEls = document.querySelectorAll('.box');
+
+// boxEls.forEach(function (boxEl, index) {
+//   boxEl.classList.add(`order-${index + 1}`);
+//   console.log(index, boxEl);
+// }
+// );
+
+const boxEl = document.querySelector('.box');
+
+console.log(boxEl.textContent);
+
+boxEl.textContent = "changuk~!";
+console.log(boxEl.textContent);
