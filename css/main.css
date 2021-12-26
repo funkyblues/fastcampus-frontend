@@ -1,7 +1,14 @@
-[type="text"/*"password"*/] {
-	background-color: orange;
+.parent {
+  width: 300px;
+  height: 200px;
+  background-color: orange;
 }
 
-[data-fruit-name] {
-	color: red;
+.child {
+  width: 100px;
+  height: inherit;
+  background-color: inherit;
+  position: fixed;
+  top: 100px;
+  right: 10px;
 }
