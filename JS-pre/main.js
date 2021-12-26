@@ -1,28 +1,24 @@
-// 기명 함수
-// 함수 선언!
-function hello() {
-  console.log('Hello~');
-}
+let boxEl = document.querySelector('.box');
 
-// 익명 함수
-// 함수 표현!
-let world = function() {
-  console.log('World~');
-}
+console.log(boxEl);
 
-// 함수 호출!
-hello(); // Hello~
-world(); // World~
+// // HTML 요소(Element) 1개 검색/찾기
+// const boxEl = document.querySelector('.box');
 
+// // HTML 요소에 적용할 수 있는 메소드!
+// boxEl.addEventListener();
 
-const changuk = {
-  name: 'changuk',
-  age: 85,
-  getName: function () {
-    return this.name;
-  }
-};
+// // 인수(Arguments)를 추가 가능!
+// boxEl.addEventListener(1, 2);
 
-const hisName = changuk.getName();
-console.log(hisName); // changuk
-console.log(changuk.getName()); //changuk
+// // 1 - 이벤트(Event, 상황)
+// boxEl.addEventListener('click', 2);
+
+// // 2- 핸들러(Handler, 실행할 함수)
+// boxEl.addEventListener('click', function() {
+//   console.log("Click~");
+// })
+
+boxEl.addEventListener("click", function () {
+  console.log("Click~~");
+});
