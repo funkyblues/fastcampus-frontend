@@ -1,0 +1,26 @@
+{
+  "name": "fastcampus-frontend",
+  "version": "1.0.0",
+  "description": "2021-2022 fastcampus-frontend",
+  "scripts": {
+    "dev": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/funkyblues/fastcampus-frontend.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/funkyblues/fastcampus-frontend/issues"
+  },
+  "homepage": "https://github.com/funkyblues/fastcampus-frontend#readme",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.5"
+  },
+  "dependencies": {
+    "lodash": "^4.17.21"
+  }
+}
