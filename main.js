@@ -1,14 +1,20 @@
-import getType from "./getType";
+const user = {
+  name: "Changuk",
+  age: 26,
+  emails: ["dnr8874@naver.com"],
+};
 
-console.log(typeof "hello world");
-console.log(typeof 123);
-console.log(typeof true);
-console.log(typeof null);
-console.log(typeof undefined);
-console.log(typeof {});
-console.log(typeof []);
+const copyUser = { ...user };
+console.log(copyUser === user);
 
-console.log(getType(123));
-console.log(getType(false));
-console.log(getType(null));
-console.log(getType({}));
+user.age = 22;
+console.log("user", user);
+console.log("copyUser", copyUser);
+
+console.log("------");
+console.log("------");
+
+user.emails.push("hello@gmail.com");
+console.log(user.emails === copyUser.emails);
+console.log("user", user.emails);
+console.log("copyUser", copyUser.emails);
