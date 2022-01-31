@@ -1,13 +1,9 @@
-import axios from "axios";
+const str = `
+010-1234-5678
+thesecon@gmail.com
+https://www.omdbapi.com/?apikey=7035c60c&s=frozen
+The quick brown fox jumps over the lazy dog.
+abbcccdddd
+`;
 
-function fetchMovies() {
-  axios.get("https://www.omdbapi.com/?apikey=dbcd06e5&s=frozen").then((res) => {
-    console.log(res);
-    const h1El = document.querySelector("h1");
-    const imgEl = document.querySelector("img");
-    h1El.textContent = res.data.Search[0].Title;
-    imgEl.src = res.data.Search[0].Poster;
-  });
-}
-
-fetchMovies();
+console.log(str.match(/(?<=@).{1,}/g));
