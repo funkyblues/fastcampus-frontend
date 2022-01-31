@@ -1,20 +1,13 @@
-const user = {
-  name: "Changuk",
-  age: 26,
-  emails: ["dnr8874@naver.com"],
-};
+import axios from "axios";
 
-const copyUser = { ...user };
-console.log(copyUser === user);
+function fetchMovies() {
+  axios.get("https://www.omdbapi.com/?apikey=dbcd06e5&s=frozen").then((res) => {
+    console.log(res);
+    const h1El = document.querySelector("h1");
+    const imgEl = document.querySelector("img");
+    h1El.textContent = res.data.Search[0].Title;
+    imgEl.src = res.data.Search[0].Poster;
+  });
+}
 
-user.age = 22;
-console.log("user", user);
-console.log("copyUser", copyUser);
-
-console.log("------");
-console.log("------");
-
-user.emails.push("hello@gmail.com");
-console.log(user.emails === copyUser.emails);
-console.log("user", user.emails);
-console.log("copyUser", copyUser.emails);
+fetchMovies();
