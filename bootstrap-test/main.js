@@ -1,6 +1,13 @@
-const emailInputEl = document.querySelector("#exampleInputEmail1");
-const modalEl = document.querySelector("#exampleModal");
+import Dropdown from "bootstrap/js/dist/dropdown.js";
+import Modal from "bootstrap/js/dist/modal";
 
-modalEl.addEventListener("shown.bs.modal", function () {
-  emailInputEl.focus();
+const dropdownElementList = [].slice.call(
+  document.querySelectorAll(".dropdown-toggle")
+);
+dropdownElementList.map(function (dropdownToggleEl) {
+  return new Dropdown(dropdownToggleEl);
+});
+
+new Modal(document.querySelector("#exampleModal"), {
+  focus: true,
 });
